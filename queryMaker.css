@@ -1,0 +1,302 @@
+//.queryMakerMaster * {
+//	box-sizing:border-box;
+//}
+.lock-scroll {
+	overflow:hidden;
+}
+.queryMakerMaster ._loadChecker_ {
+	position:relative;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:0%;
+	height:0%;
+	visibility:hidden;
+}
+.queryMakerMaster {
+	padding:0px;
+	border:none;
+	position:absolute;
+	font-size:30px;
+	overflow:hidden;
+	transition:visibility 0.4s ease,height 0.4s ease,width 0.4s ease;
+}
+.queryMakerMaster._hidden_ {
+	visibility: hidden;
+	//display:none !important;
+	display:block !important;
+	height:0% !important;
+	width:0% !important;
+}
+.queryMakerMaster.orientationRow {
+	//display:inline-block;
+	//display:table;
+	white-space:nowrap;
+}
+.queryMakerMaster.sizeT1T1 {
+	width:33%;
+	height:33%;
+}
+.queryMakerMaster.sizeT1T2 {
+	width:33%;
+	height:66%;
+}
+.queryMakerMaster.sizeT1T3 {
+	width:33%;
+	height:100%;
+}
+.queryMakerMaster.sizeT2T1 {
+	width:66%;
+	height:33%;
+}
+.queryMakerMaster.sizeT2T2 {
+	width:66%;
+	height:66%;
+}
+.queryMakerMaster.sizeT2T3 {
+	width:66%;
+	height:100%;
+}
+.queryMakerMaster.sizeT3T1 {
+	width:100%;
+	height:33%;
+}
+.queryMakerMaster.sizeT3T2 {
+	width:100%;
+	height:66%;
+}
+.queryMakerMaster.sizeT3T3 {
+	width:100%;
+	height:100%;
+}
+.queryMakerMaster.locationT1T1 {
+	left:0px;
+	top:0px;
+}
+.queryMakerMaster.locationT1T2 {
+	left:0px;
+	top:50%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%);
+}
+.queryMakerMaster.locationT1T3 {
+	left:0px;
+	bottom:0px;
+}
+.queryMakerMaster.locationT2T1 {
+	left:50%;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+	top:0px;
+}
+.queryMakerMaster.locationT2T2 {
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.queryMakerMaster.locationT2T3 {
+	left:50%;
+	bottom:0px;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+}
+.queryMakerMaster.locationT3T1 {
+	right:0%;
+	top:0px;
+}
+.queryMakerMaster.locationT3T2 {
+	right:0%;
+	top:50%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%);
+}
+.queryMakerMaster.locationT3T2 {
+	right:0%;
+	top:50%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%);
+}
+.queryMakerMaster.locationT3T3 {
+	right:0%;
+	bottom:0%;
+}
+
+.queryMakerWrapper {
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:visible;
+}
+.queryMakerWrapper.orientationRow {
+	//display:table-cell;
+}
+
+
+.queryMakerUnit {
+	font-size:100%;
+	position:relative;
+	overflow:hidden;
+	background-color:rgba(0,0,0,0.5);
+	visibility:visible;
+	opacity:0;
+	width:0%;
+	height:0%;
+	transition:opacity 0.4s ease,height 0.4s ease,width 0.4s ease,background-color 0.4s ease,visibility 0.4s ease;
+}
+.queryMakerWrapper._fisheye_ .queryMakerUnit {
+	transition:opacity 0.4s ease,height 0s linear,width 0s linear,background-color 0.4s ease,visibility 0.4s ease;
+}
+.queryMakerUnit._hidden_ {
+	visibility:hidden;
+}
+.queryMakerUnit._transparent_ {
+	opacity:0 !important;
+}
+.queryMakerUnit._pressed_ {
+	width:0% !important;
+	transition:opacity 0.4s ease,height 0.4s ease,width 0.4s ease,background-color 0.4s ease,visibility 0.4s ease !important;
+}
+.queryMakerUnit._squashed_ {
+	height:0% !important;
+	transition:opacity 0.4s ease,height 0.4s ease,width 0.4s ease,background-color 0.4s ease,visibility 0.4s ease !important;
+}
+.queryMakerUnit.orientationRow {
+	display:inline-block;
+}
+.queryMakerUnit.orientationColumn {
+	float:left;
+}
+.queryMakerUnit.hovered {
+	background-color:rgba(0,0,0,0.8);
+}
+.queryMakerUnit.top {
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.queryMakerUnit.right {
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.queryMakerUnit.bottom {
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.queryMakerUnit.left {
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+.queryMakerUnit:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.queryMakerLabel {
+	display:block;
+	max-height:100%;
+	font-size:100%;
+	position:relative;
+	padding-left:10%;
+	padding-top:5px;
+	overflow:hidden;
+	transition:opacity 1s ease,padding-left 1s ease,padding-top 1s ease,top 1s ease,width 1s ease, height 1s ease, font-size 1s ease,max-height 1s ease;
+	opacity:0.8;
+	white-space:nowrap;
+	color:rgb(220,220,220);
+}
+.queryMakerLabel.active {
+	font-size:50%;
+	padding-left:1%;
+	opacity:0.8;
+}
+.queryMakerLabel.noLabel {
+	display:none;
+}
+.queryMakerLabel.blurred {
+	opacity: 0;
+	max-height:0%;
+}
+.queryMakerInput {
+	left:0%;
+	width:100%;
+	height:50%;
+	position:relative;
+	overflow:hidden;
+	border-style:none;
+	outline:none;
+	padding-left:10%;
+	padding-right:1%;
+	background-color:transparent;
+	color:rgb(220,220,220);
+	font-size:90%;
+	cursor:default;
+	transition:width 1s ease, height 1s ease, font-size 1s ease;
+}
+.queryMakerInput::-ms-clear {
+	display: none; 
+	width:0; 
+	height:0;
+}
+.queryMakerInput:-ms-clear {
+	display: none; 
+	width:0; 
+	height:0;
+}
+.queryMakerInput.active {
+	font-size:100%;
+}
+.queryMakerInput.noLabel {
+	//transform:translate(0%,-50%);
+	//-ms-transform:translate(0%,-50%);
+}
+.queryMakerInput.prepended {
+	padding-left:1%;
+}
+.queryMakerImg {
+	left:50%;
+	width:auto;
+	height:100%;
+	position:relative;
+	//overflow:hidden;
+	background-color:transparent;
+	cursor:default;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+	transition:width 1s ease, height 1s ease;
+}
+.queryMakerCarrier {
+	left:50%;
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	background-color:transparent;
+	cursor:default;
+	transform:translate(-50%,0%);
+	-ms-transform:translate(-50%,0%);
+	transition:width 1s ease, height 1s ease;
+}
+.queryMakerHighlight {
+	left:0%;
+	position:absolute;
+	top:97%;
+	overflow:hidden;
+	background-color:rgba(240,50,50,0.9);
+	transition:width 0.5s ease, height 0.5s ease;
+}
+.queryMakerHighlight.default {
+	width:0%;
+	height:3%;
+}
+.queryMakerHighlight.default.alternate {
+	width:100%;
+	height:0%;
+}
+.queryMakerHighlight.active,.queryMakerHighlight.default.alternate.active {
+	width:100%;
+	height:3%;
+}
+.queryMakerHighlight.noHighlight {
+	display:none;
+}
